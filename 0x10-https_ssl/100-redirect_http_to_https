@@ -41,7 +41,7 @@ frontend monashabka-frontend
         default_backend monashabka-backend
 
 frontend monashabka-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/monashabka.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.monashabka.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend monashabka-backend
 
